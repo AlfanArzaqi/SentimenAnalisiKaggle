@@ -39,25 +39,30 @@ SentimenAnalisiKaggle/
 
 ## 🚀 How to Run
 
-### 1. Download Dataset
+### For Graders/Reviewers (Google Colab - Recommended)
+1. Open `Sentiment_Analysis_Complete.ipynb` in Google Colab
+2. Click "Runtime" → "Run all"
+3. Dataset loads automatically from repository
+4. No additional setup required!
 
+### For Local Development
 ```bash
-# Using Kaggle API
-kaggle datasets download -d jp797498e/twitter-entity-sentiment-analysis
-unzip twitter-entity-sentiment-analysis.zip
-```
-
-### 2. Install Dependencies
-
-```bash
+git clone https://github.com/AlfanArzaqi/SentimenAnalisiKaggle.git
+cd SentimenAnalisiKaggle
 pip install -r requirements.txt
+jupyter notebook Sentiment_Analysis_Complete.ipynb
 ```
 
-### 3. Run Notebook
+### Dataset
+- Pre-downloaded and included in `dataset/` folder
+- Source: Kaggle Twitter Entity Sentiment Analysis
+- No API keys or credentials needed
 
-- Open `Sentiment_Analysis_Complete.ipynb`
-- Ensure `twitter_training.csv` is in the same directory
-- Run all cells sequentially
+### Features
+- ✅ Auto-detects Google Colab vs Local environment
+- ✅ Automatic repository cloning in Colab
+- ✅ Path handling for cross-platform compatibility
+- ✅ Clear error messages and file verification
 
 ## 📝 Notebook Structure
 
@@ -154,6 +159,12 @@ Each sample is predicted by all 3 models with confidence scores.
 ## 📚 Dataset Information
 
 **Source**: [Kaggle - Twitter Entity Sentiment Analysis](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis)
+
+**Location**: `dataset/` folder (included in repository)
+
+**Files**:
+- `twitter_training.csv` - Main training dataset (74,682 samples)
+- `twitter_validation.csv` - Validation dataset
 
 **Original Classes**: Positive, Negative, Neutral, Irrelevant
 
