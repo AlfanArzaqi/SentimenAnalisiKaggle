@@ -39,25 +39,30 @@ SentimenAnalisiKaggle/
 
 ## 🚀 How to Run
 
-### 1. Download Dataset
+### For Graders/Reviewers (Google Colab - Recommended)
+1. Open `Sentiment_Analysis_Complete.ipynb` in Google Colab
+2. Click "Runtime" → "Run all"
+3. Dataset loads automatically from repository
+4. No additional setup required!
 
+### For Local Development
 ```bash
-# Using Kaggle API
-kaggle datasets download -d jp797498e/twitter-entity-sentiment-analysis
-unzip twitter-entity-sentiment-analysis.zip
-```
-
-### 2. Install Dependencies
-
-```bash
+git clone https://github.com/AlfanArzaqi/SentimenAnalisiKaggle.git
+cd SentimenAnalisiKaggle
 pip install -r requirements.txt
+jupyter notebook Sentiment_Analysis_Complete.ipynb
 ```
 
-### 3. Run Notebook
+### Dataset
+- Pre-downloaded and included in `dataset/` folder
+- Source: Kaggle Twitter Entity Sentiment Analysis
+- No API keys or credentials needed
 
-- Open `Sentiment_Analysis_Complete.ipynb`
-- Ensure `twitter_training.csv` is in the same directory
-- Run all cells sequentially
+### Features
+- ✅ Auto-detects Google Colab vs Local environment
+- ✅ Automatic repository cloning in Colab
+- ✅ Path handling for cross-platform compatibility
+- ✅ Clear error messages and file verification
 
 ## 📝 Notebook Structure
 
@@ -141,19 +146,26 @@ Each sample is predicted by all 3 models with confidence scores.
 
 ## 🛠️ Dependencies
 
+**Minimum versions** (see requirements.txt for details):
 - Python 3.8+
-- pandas 2.0.3
-- numpy 1.24.3
-- scikit-learn 1.3.0
-- nltk 3.8.1
-- tensorflow 2.13.0
-- matplotlib 3.7.2
-- seaborn 0.12.2
-- tqdm 4.65.0
+- pandas >= 1.3.0
+- numpy >= 1.21.0
+- scikit-learn >= 1.0.0
+- nltk >= 3.6.0
+- tensorflow >= 2.8.0
+- matplotlib >= 3.4.0
+- seaborn >= 0.11.0
+- tqdm >= 4.62.0
 
 ## 📚 Dataset Information
 
 **Source**: [Kaggle - Twitter Entity Sentiment Analysis](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis)
+
+**Location**: `dataset/` folder (included in repository)
+
+**Files**:
+- `twitter_training.csv` - Main training dataset (74,682 samples)
+- `twitter_validation.csv` - Validation dataset
 
 **Original Classes**: Positive, Negative, Neutral, Irrelevant
 
@@ -187,4 +199,4 @@ This project is for educational purposes.
 
 ---
 
-**Note**: Make sure to download the dataset from Kaggle before running the notebook!
+**Note**: The dataset is included in the repository's `dataset/` folder - no additional download required!
