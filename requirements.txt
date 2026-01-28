@@ -19,4 +19,4 @@ seaborn==0.12.2
 tqdm==4.65.0
 
 # Kaggle Dataset Download
-kagglehub
+kagglehub==0.4.1
