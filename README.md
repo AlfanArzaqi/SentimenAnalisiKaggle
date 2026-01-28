@@ -146,15 +146,16 @@ Each sample is predicted by all 3 models with confidence scores.
 
 ## 🛠️ Dependencies
 
+**Minimum versions** (see requirements.txt for details):
 - Python 3.8+
-- pandas 2.0.3
-- numpy 1.24.3
-- scikit-learn 1.3.0
-- nltk 3.8.1
-- tensorflow 2.13.0
-- matplotlib 3.7.2
-- seaborn 0.12.2
-- tqdm 4.65.0
+- pandas >= 1.3.0
+- numpy >= 1.21.0
+- scikit-learn >= 1.0.0
+- nltk >= 3.6.0
+- tensorflow >= 2.8.0
+- matplotlib >= 3.4.0
+- seaborn >= 0.11.0
+- tqdm >= 4.62.0
 
 ## 📚 Dataset Information
 
@@ -198,4 +199,4 @@ This project is for educational purposes.
 
 ---
 
-**Note**: Make sure to download the dataset from Kaggle before running the notebook!
+**Note**: The dataset is included in the repository's `dataset/` folder - no additional download required!
